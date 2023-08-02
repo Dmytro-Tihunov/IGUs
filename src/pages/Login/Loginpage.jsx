@@ -16,13 +16,13 @@ function Loginpage() {
   const [error, setError] = useState("");
   const [show, setShow] = useState(true);
   const navigate = useHistory();
-  const { auth, googleLogin } = useAuth();
+  const { auth } = useAuth();
  
   useEffect(() => {
     if (auth) {
       navigate.push("/");
     }
-  }, [auth]);
+  }, [auth, msg, navigate, show]);
 
   const closeAlert = () => {
     setShow(false);
@@ -46,7 +46,7 @@ function Loginpage() {
         email: emailRef.current.value,
         password: passwordRef.current.value,
       });
-      if (error) setError(error.message);
+      if (error) setError(error.message + session);
       if (user) {
         setMsg("Login successful");
         navigate.push("/");

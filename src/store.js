@@ -10,7 +10,7 @@ const useStore = create((set) => ({
   isToolsLoading: false,
   getCategories: async () => {
     set({ isCategoriesLoading: true });
-    const { data, error } = await supabase.from("Tools").select("Category");
+    const { data } = await supabase.from("Tools").select("Category");
     const uniqueCategories = [...new Set(data.map((item) => item.Category))];
     const categoriesWithSubcategories = uniqueCategories.map((category) => ({
       name: category,
