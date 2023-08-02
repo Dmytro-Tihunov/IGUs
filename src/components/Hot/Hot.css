@@ -1,0 +1,88 @@
+@import url(../../App.css);
+
+.hotSection {
+  background-color: var(--bg-two);
+  padding: 0rem 50;
+  border-bottom: 4px solid #000;
+  padding-bottom: 50px;
+}
+
+.image-hot {
+  width: 100%;
+  height: 430px;
+  background-position: top;
+  background-size: cover;
+}
+
+.hotSection .sectionTitle {
+  font-family: "Montserrat";
+  text-align: center;
+  margin-block: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-shadow: 5px 5px #000;
+}
+
+.hotSection .carousel {
+  background-color: white;
+  border: 4px solid #000;
+  border-radius: 1rem;
+}
+
+.hotSection .carousel .cta {
+  margin-bottom: 1rem;
+  background-color: var(--bg-color-2);
+}
+
+.hotSection .carouselRow {
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+}
+
+.hotSection .content .number {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: var(--bg-color-1);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../../../public/img/arrowLift.png);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../../../public/img/arrowRight.png);
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
+}
+
+@media (max-width: 992px) {
+  .hotSection .sectionTitle {
+    font-size: 2.2rem;
+  }
+}
+
+.category-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 50px;
+  gap: 10px;
+  flex-flow: wrap;
+  margin-top: 60px;
+}

@@ -1,0 +1,114 @@
+.component {
+  position: relative;
+  padding: 10px 16px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 540;
+  letter-spacing: 0;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  isolation: isolate;
+  border: 0;
+}
+
+.component:hover::after {
+  cursor: pointer;
+  background-color: #da9ef2;
+  content: "";
+  z-index: -2;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: absolute;
+  inset: 0px;
+  left: 4px;
+  top: 4px;
+}
+
+.component:hover::before {
+  background-color: #f7cc6c;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: absolute;
+  inset: 0px;
+  content: "";
+  z-index: -1;
+  right: 4px;
+  bottom: 4px;
+}
+
+
+.component.active::after {
+  background-color: #da9ef2;
+  content: "";
+  z-index: -2;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: absolute;
+  inset: 0px;
+  left: 4px;
+  top: 4px;
+}
+
+.component.active::before {
+  background-color: #f7cc6c;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: absolute;
+  inset: 0px;
+  content: "";
+  z-index: -1;
+  right: 4px;
+  bottom: 4px;
+}
+
+/* .component::before {
+  content: "";
+  z-index: -2;
+  background-color: #da9ef2;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: absolute;
+  inset: 0px;
+  left: 4px;
+  top: 4px;
+}
+
+.component::after {
+  content: "";
+  z-index: -1;
+  background-color: #f7cc6c;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: absolute;
+  inset: 0px;
+  right: 4px;
+  bottom: 4px;
+} */
+
+@media (min-width: 1200px) {
+  .component {
+    position: relative;
+    padding: 6px 10px;
+    font-family: "Montserrat";
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .component {
+    position: relative;
+    padding: 8px 12px;
+    font-family: "Montserrat";
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .component {
+    padding: 10px 16px;
+    font-family: "Montserrat";
+    font-size: 20px;
+  }
+}

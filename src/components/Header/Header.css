@@ -1,0 +1,118 @@
+@import url(../../App.css);
+
+.headerLogoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.headerLogoSection .explanations{
+font-size: 12px;
+margin-left: 40px;
+}
+
+.headerLogoSection .logoPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLogoSection .logoPart img {
+  max-width: 120px;
+}
+
+
+@media (max-width: 992px) {
+  .headerLogoSection .explanations{
+  display: none;
+    }
+}
+
+/* ===
+HEADER SECTION
+=== */
+
+
+.headerSection .navbar {
+  padding: 1rem 2rem;
+  background-color: var(--bg-color-3) !important;
+  border-top: 4px solid #000;
+
+}
+
+.headerSection .navbar .navbar-brand img {
+  max-width: 80px;
+}
+
+.headerSection .navbar .nav-link {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-weight:700; color: #000;
+}
+
+.headerSection .navbar .nav-link:hover {
+  opacity: .7;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: 0;
+  outline: 0;
+  box-shadow:10lvb
+}
+
+@media (max-width: 992px) {
+  .headerSection .navbar {
+    text-align: center;
+  }
+
+  .headerSection .navbar .nav-link {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+
+
+/* ===
+OFFCANVAS SECTION
+=== */
+.block-cat{
+margin-bottom: 30px;  
+}
+
+.block-title{
+  border-bottom: solid 1px gray;
+  margin-bottom: 15px;
+}
+
+.title-link-canvas {
+  color: #000 !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+}
+
+.sublink-canvas{
+  color: #000 !important;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  text-align: left;
+}
+
+.sublink-canvas:hover{
+ text-decoration: underline;
+}
+
+.offcanvas{
+min-height: 600px;
+}

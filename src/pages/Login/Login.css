@@ -1,0 +1,126 @@
+/* ===
+LOGIN SECREEN
+=== */
+
+.loginHeader {
+  background-color: var(--bg-color-3);
+}
+
+.loginSection {
+  background-color: rgba(9, 138, 147, 1);
+  min-height: 83.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginSection .row {
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.loginSection .heading .logTitle {
+  font-weight: 700;
+  line-height: 1;
+}
+
+.loginSection .heading .logText {
+  line-height: 1;
+  margin-top: -5px;
+}
+
+.loginSection .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loginSection .input-group .form-control {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px !important;
+  border: 2px solid #000;
+}
+.loginSection .input-group .form-control:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 2px solid #000;
+}
+
+.loginSection .loginWrapper {
+  background-color: white;
+  padding: 4rem;
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: grid;
+  gap: 3rem;
+  text-align: center;
+}
+.loginSection .loginWrapper .connectBtns {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginSection .loginWrapper .connectBtns img {
+  max-width: 20px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.loginSection .loginWrapper .connectBtns .abtn {
+  background: #000;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 5px 5px #00000020;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.loginSection .loginBtn .cta {
+  padding: 0.4rem 3rem;
+  border-radius: 5px;
+}
+
+.loginSection .loginWrapper .connectBtns .abtn:hover {
+  letter-spacing: 0.1rem;
+}
+
+.loginSection .loginWrapper .connectBtns .google {
+  background-color: white;
+  color: #3a3a3a;
+}
+
+.loginSection .loginWrapper .signupBtn {
+  background-color: var(--bg-color-2);
+}
+
+.signupLink{
+color:#000;
+text-decoration: underline;
+}
+
+.forgotPass a{
+  color:#000;
+  font-size: 13px;
+}
+
+@media (max-width: 992px) {
+  /* === LOGO SCREEN === */
+
+  .loginSection .loginWrapper {
+    padding: 3rem 1.5rem;
+  }
+  .loginSection .row {
+    padding: 2rem 0;
+  }
+}

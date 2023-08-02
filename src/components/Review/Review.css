@@ -1,0 +1,19 @@
+@import url(/src/App.css);
+
+.reviewSection {
+  background-color: var(--bg-two);
+  padding: 5rem 0;
+  border: 2px solid #000;
+}
+
+.reviewSection .sectionTitle {
+  color: black;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 800;
+}
+
+.reviewSection .cardRow {
+  justify-content: center;
+  align-items: center;
+}
