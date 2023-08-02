@@ -4,6 +4,7 @@ import ContentLoader from "react-content-loader";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Hot.css";
 import Button from "./Button";
+import { supabase } from "../../lib/api";
 import useStore from "../../store";
 
 function Hot() {
@@ -18,6 +19,7 @@ function Hot() {
   const Seasons = {
     "Social Media": "Social",
     "Business and Finance": "Business",
+    "Lifestyle and Health": "Lifestyle",
     "Audio and Video": "Video",
     "Education and Productivity": "Education",
     Coding: "Coding",

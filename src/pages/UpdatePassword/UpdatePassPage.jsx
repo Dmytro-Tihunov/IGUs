@@ -17,7 +17,7 @@ function UpdatePassPage() {
     if (!auth) {
       navigate.push("/");
     }
-  }, [show, auth, navigate]);
+  }, [auth]);
 
   const closeAlert = () => {
     setShow(false);

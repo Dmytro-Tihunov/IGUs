@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col } from "react-bootstrap";
 import { useAuth } from "../../context/AuthProvider";
 import { Rating } from "react-simple-star-rating";
@@ -16,7 +16,7 @@ function ProjectCard({
   url,
 }) {
   const [showFullDescription, setShowFullDescription] = useState(false);
-  // const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(0);
   const shortDescription = description.slice(0, 40); // change 100 to whatever number of characters you want to display initially
   const { auth } = useAuth();
 
@@ -97,7 +97,7 @@ function ProjectCard({
             </div>
           )}
           <div className="actionBtn">
-            <a href={url} target="_blank" rel='noreferrer' className="cta btn btn-primary">
+            <a href={url} target="_blank" className="cta btn btn-primary">
               try now
             </a>
           </div>

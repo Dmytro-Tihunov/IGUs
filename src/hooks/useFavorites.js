@@ -9,7 +9,7 @@ const useFavorites = () => {
     const favorite = JSON.parse(window.localStorage.getItem("favorites")) || [];
     if (favorite) setFavorites(favorite);
     setIsLoaded(true);
-  }, [isLoaded]);
+  }, []);
 
   const addFavorite = (id) => {
      if(favorites.includes(id)) return false;

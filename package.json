@@ -23,8 +23,8 @@
     "zustand": "^4.3.9"
   },
   "scripts": {
-    "start": "react-scripts start --port 8000 ",
-    "build": "react-scripts build",
+    "start": "react-scripts start --port 8000",
+    "build": "react-scripts build --omit=dev",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,10 +32,7 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ],
-    "rules": {
-      "react-hooks/exhaustive-deps": "off"
-    }
+    ]
   },
   "browserslist": {
     "production": [
@@ -48,8 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
