@@ -85,6 +85,19 @@ function CategoryPage() {
     }
   }
 
+  useEffect(() => {
+    const unlisten = history.listen(() => {
+      getTools();
+    });
+    return () => {
+      unlisten();
+    };
+  }, [history]);
+
+  useEffect(() => {
+    getTools();
+  }, [slug]);
+
   async function getTools() {
     try {
       setIsLoading(true);
@@ -102,21 +115,6 @@ function CategoryPage() {
     }
     setIsLoading(false);
   }
-
-  useEffect(() => {
-    const unlisten = history.listen(() => {
-      getTools();
-    });
-    return () => {
-      unlisten();
-    };
-  }, [history]);
-
-  useEffect(() => {
-    getTools();
-  }, [slug]);
-
- 
 
   const MyLoader = () => (
     <ContentLoader

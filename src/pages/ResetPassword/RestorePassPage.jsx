@@ -17,7 +17,7 @@ const RestorePassPage = () => {
     if (auth) {
       navigate.push("/");
     }
-  }, [auth, email ,navigate, show]);
+  }, [auth]);
 
   const closeAlert = () => {
     setShow(false);

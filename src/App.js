@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header/Header";
 import Headerlogo from "./components/Header/Headerlogo";
 import Footer from "./components/Footer/Footer";
@@ -15,19 +15,16 @@ import useStore from "./store";
 import { useAuth } from "./context/AuthProvider";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(false)
   const { getCategories, getTools, getUsersScores } = useStore();
   const { user } = useAuth();
 
   useEffect(() => {
-    setIsLoading(true)
     getTools()
     getCategories()
     if (user){
       getUsersScores(user.id)
     }
-    setIsLoading(false)
-  }, [isLoading]); 
+  }, []); 
 
   return (
     <div className="App">
